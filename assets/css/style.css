@@ -1,25 +1,30 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 
 /* ----------------------------------- Navbar CSS --------------------------------------------- */
 
 nav {
-    padding: 0 80px;
+
+    position: sticky;
+    top: 0;
 }
 
 .top_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Source Sans 3", sans-serif;
+    padding: 0 80px;
+    background-color: #fff;
 }
 
 .left_nav {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .left_nav img {
@@ -60,10 +65,158 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     font-size: 16px;
-    padding: 5px 40px 5px 15px;
+    padding: 8px 40px 8px 15px;
     width: 175px;
 }
 
 .left_nav input[type=search]::placeholder {
     font-style: italic;
+}
+
+.left_nav input[type=search]:focus {
+    outline: 2px solid #04AA6D;
+}
+
+.btn_menu {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 8px;
+}
+
+.btn_menu:hover {
+    background-color: #d6d4d4ad;
+}
+
+.right_nav {
+    display: flex;
+    align-items: center;
+}
+
+.right_nav ul li {
+    float: left;
+    list-style: none;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+.right_nav ul li:hover {
+    background-color: #d6d4d4ad;
+}
+
+.right_nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right_nav ul li a i {
+    color: #9763f6;
+    text-decoration: none;
+}
+
+.user_wp {
+    border: 2px solid #1E3050;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom_nav {
+    background-color: #282A35;
+}
+
+.bottom_nav ul {
+    display: flex;
+    padding: 0 80px;
+    margin: 0;
+}
+
+.bottom_nav ul li {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.bottom_nav ul li:hover {
+    background-color: #000;
+}
+
+.bottom_nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/* ----------------------------------- Footer CSS --------------------------------------------- */
+
+footer {
+    background-color: #282A35;
+    text-align: center;
+    padding: 20px 80px;
+}
+
+.top_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_footer img {
+    height: 50px;
+    width: 60px;
+}
+
+.top_footer ul {
+    margin: 0;
+}
+
+.top_footer ul li {
+    padding: 40px 60px;
+    float: left;
+    list-style: none;
+}
+
+.top_footer ul li:hover a {
+    text-decoration: underline;
+}
+
+.top_footer ul li a {
+    color: #FFF4A3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.bottom_footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    color: #ddd;
+    justify-content: center;
+}
+
+.bottom_footer div {
+    text-align: center;
+}
+
+.bottom_footer div ul {
+    padding: 0;
+}
+
+.bottom_footer div ul li {
+    list-style: none;
+}
+
+.bottom_footer div ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.bottom_footer div h5 {
+    line-height: 15px;
+    font-weight: 600;
+    font-size: 18px;
 }
