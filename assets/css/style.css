@@ -7,8 +7,85 @@ body {
 
 /* ----------------------------------- Navbar CSS --------------------------------------------- */
 
-nav {
+.top_nav {
+    background-color: #fff;
+}
 
+.menu_wp {
+    margin: 0 77.500px;
+}
+
+.left_nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.left_nav img {
+    padding: 8px 16px;
+}
+
+.left_nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.left_nav ul li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+}
+
+.left_nav ul li a {
+    font-size: 16px;
+}
+
+.left_nav ul li:hover {
+    background-color: #04AA6D;
+}
+
+.left_nav ul li:hover a {
+    color: #fff;
+}
+
+.left_nav ul li a {
+    text-decoration: none;
+    color: #282A35;
+    vertical-align: middle;
+}
+
+.left_nav input[type=search] {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 8px 40px 8px 15px;
+    width: 175px;
+}
+
+.left_nav input[type=search]::placeholder {
+    font-style: italic;
+}
+
+.left_nav input[type=search]:focus {
+    outline: 2px solid #04AA6D;
+}
+
+.btn_menu {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 8px;
+}
+
+.btn_menu:hover {
+    background-color: #d6d4d4ad;
+}
+
+/* nav {
     position: sticky;
     top: 0;
 }
@@ -17,7 +94,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
+    margin: 0 77.500px;
     background-color: #fff;
 }
 
@@ -131,7 +208,6 @@ nav {
 
 .bottom_nav ul {
     display: flex;
-    padding: 0 80px;
     margin: 0;
 }
 
@@ -150,7 +226,7 @@ nav {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-}
+} */
 
 /* ----------------------------------- Footer CSS --------------------------------------------- */
 
@@ -191,32 +267,81 @@ footer {
     text-decoration: none;
 }
 
-.bottom_footer {
+.middle_footer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     color: #ddd;
     justify-content: center;
 }
 
-.bottom_footer div {
+.middle_footer div {
     text-align: center;
 }
 
-.bottom_footer div ul {
+.middle_footer div ul {
     padding: 0;
+    line-height: 1;
 }
 
-.bottom_footer div ul li {
+.middle_footer div ul li {
     list-style: none;
 }
 
-.bottom_footer div ul li a {
-    text-decoration: none;
-    color: #ddd;
+.middle_footer div ul li:hover a {
+    color: #FFF4A3;
 }
 
-.bottom_footer div h5 {
+.middle_footer div ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 12px;
+
+}
+
+.middle_footer div h5 {
     line-height: 15px;
     font-weight: 600;
     font-size: 18px;
+}
+
+.bottom_footer {
+    text-align: center;
+    width: 100%;
+}
+
+.bottom_footer ul {
+    margin: 0;
+    padding: 80px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.bottom_footer ul li {
+    list-style: none;
+}
+
+.bottom_footer ul li:hover a {
+    color: #FFF4A3;
+}
+
+.bottom_footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer_text {
+    padding: 0 300px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+.footer_text a {
+    color: #ddd;
+}
+
+.bottom_footer a:hover {
+    color: #FFF4A3;
 }
